@@ -77,8 +77,8 @@ public class GameManager : MonoBehaviour
 
     void SpawnEnemy()
     {
-        float randomY = Random.Range(-4f, 4f);
-        Vector2 spawnPosition = new Vector2(10f, randomY);
+        Vector3 spawnPosition = new Vector3(721f, 131f, 0f);
         GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
     }
+
 }

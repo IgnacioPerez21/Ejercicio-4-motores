@@ -412,6 +412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 40
   projectilePrefab: {fileID: 9039202456665993184, guid: c0a454177b2691d418c5b0eb20513317, type: 3}
+  projectileSpeed: 30
+  projectileDestroyDelay: 3
 --- !u!1 &761422111
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,24 +748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044835090}
   m_CullTransparentMesh: 1
---- !u!1 &1243062287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4834409041981764222, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
-  m_PrefabInstance: {fileID: 3214429252117084273}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1243062293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1243062287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4823e0922e32ad748a4dc577bafaf3d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 25
 --- !u!1001 &3214429252117084273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -782,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2105552551711218821, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2105552551711218821, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -817,13 +801,11 @@ PrefabInstance:
       value: Square
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5627392888596323533, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
+    - {fileID: 0}
+    - {fileID: 3582572873911573416, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4834409041981764222, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1243062293}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d9a7f774dfe1a8449410b3569c6b55a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
